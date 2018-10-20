@@ -8,6 +8,9 @@ public class Main {
     final static Logger logger = Logger.getLogger(Main.class);
 
     public static void main(String[] args) {
+        HelloWorld helloWorld = new HelloWorld();
+        helloWorld.hello();
+
         Hobby hobby1 = new Hobby("football");
         hobby1.setHours(12);
 
