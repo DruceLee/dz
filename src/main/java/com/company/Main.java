@@ -11,23 +11,25 @@ public class Main {
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.hello();
 
-        Hobby hobby1 = new Hobby("football");
+        Hobby hobby1 = new Hobby1("football");
         hobby1.setHours(12);
 
-        Hobby hobby2 = new Hobby(12);
+        Hobby hobby2 = new Hobby1(12);
         hobby2.setName("basketball");
 
-        Hobby hobby3 = new Hobby("volleyball", 10);
+        Hobby hobby3 = new Hobby2("volleyball", 10);
 
         System.out.println(hobby1.toString());
         System.out.println(hobby2.toString());
         System.out.println(hobby3.toString());
 
-
+        Hobby[] hobbies = {new Hobby1(), new Hobby1(), new Hobby2()};
+        for (Hobby h : hobbies)
+            h.tellAboutHobby();
 
         Scanner scanner = new Scanner(System.in);
 
-        Hobby hobby4 = new Hobby();
+        Hobby hobby4 = new Hobby1();
 
         System.out.println("Enter char_param ");
         hobby4.setChar_param(scanner.next().charAt(0));

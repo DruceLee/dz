@@ -1,8 +1,8 @@
 package com.company;
 
-public class Hobby {
-    private String name;
-    private int hours;
+public abstract class Hobby {
+    protected String name;
+    protected int hours;
 
     private byte byte_param;
     private char char_param;
@@ -43,6 +43,8 @@ public class Hobby {
         this.double_param = double_param;
         this.boolean_param = boolean_param;
     }
+
+    public abstract void tellAboutHobby();
 
     public String getName() {
         return name;
